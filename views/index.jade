@@ -1,0 +1,9 @@
+h1= title
+p Welcome to #{title}
+#tweets
+  - for(var i=0;i<tweets.length;i++){
+  -     var tweet = tweets[i], id = tweet.id, text=tweet.text;
+        div(class="tweet") 
+            !{text}
+  - }
+
